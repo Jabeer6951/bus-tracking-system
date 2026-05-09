@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#0B0B16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Bus Tracker"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#CDB7FF"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnDriverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Login"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#CDB7FF"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:backgroundTint="#CDB7FF"
+        android:textColor="#000000" />
+
+</LinearLayout>

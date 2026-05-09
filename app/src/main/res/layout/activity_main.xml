@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/busStartedChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Started"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"
+            app:chipBackgroundColor="#333333"
+            app:chipIcon="@android:drawable/presence_online"
+            app:chipIconTint="#4CAF50"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startBus"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Start Bus"
+            android:textAllCaps="false"
+            app:backgroundTint="#E1D5F9"
+            app:cornerRadius="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/etDriverId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver ID Number" />
+
+        <EditText
+            android:id="@+id/etBusNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Bus Number" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login" />
+
+    </LinearLayout>
+
+</FrameLayout>
